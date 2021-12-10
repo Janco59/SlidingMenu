@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="puF-eM-FgI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eT7-vC-ggp">
+            <objects>
+                <viewController id="azq-aR-WGl" customClass="ViewController" customModule="SlidingMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0DX-eo-lkc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilW-HO-FB0" userLabel="Menu View">
+                                <rect key="frame" x="0.0" y="88" width="140" height="808"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPy-jc-PZE">
+                                        <rect key="frame" x="5" y="0.0" width="80" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="Item 1"/>
+                                        <connections>
+                                            <action selector="btnItem1Tapped:" destination="azq-aR-WGl" eventType="touchUpInside" id="tE1-Td-m13"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhF-U7-w2E">
+                                        <rect key="frame" x="5" y="41" width="85.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system" title="Item 2"/>
+                                        <connections>
+                                            <action selector="btnItem2Tapped:" destination="azq-aR-WGl" eventType="touchUpInside" id="KZY-7I-mag"/>
+                                            <segue destination="7nm-aK-4oQ" kind="show" id="ONc-0f-Czq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c59-ua-uyB">
+                                        <rect key="frame" x="5" y="82" width="84" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Item 3"/>
+                                        <connections>
+                                            <action selector="btnItem3Tapped:" destination="azq-aR-WGl" eventType="touchUpInside" id="iO2-nH-cdy"/>
+                                            <segue destination="huu-a8-WJw" kind="show" id="FG2-oq-3KR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="VhF-U7-w2E" firstAttribute="top" secondItem="NPy-jc-PZE" secondAttribute="bottom" constant="10" id="L9e-Xg-W4x"/>
+                                    <constraint firstAttribute="width" constant="140" id="PrE-D2-sT2"/>
+                                    <constraint firstItem="VhF-U7-w2E" firstAttribute="leading" secondItem="NPy-jc-PZE" secondAttribute="leading" id="U0K-Ck-8ou"/>
+                                    <constraint firstItem="c59-ua-uyB" firstAttribute="leading" secondItem="NPy-jc-PZE" secondAttribute="leading" id="aCg-1m-gcl"/>
+                                    <constraint firstItem="c59-ua-uyB" firstAttribute="top" secondItem="VhF-U7-w2E" secondAttribute="bottom" constant="10" id="nr2-70-3i2"/>
+                                    <constraint firstItem="NPy-jc-PZE" firstAttribute="leading" secondItem="ilW-HO-FB0" secondAttribute="leading" constant="5" id="pSW-Dh-5nI"/>
+                                    <constraint firstItem="NPy-jc-PZE" firstAttribute="top" secondItem="ilW-HO-FB0" secondAttribute="top" id="pmX-jk-Z57"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xbs-XN-LRQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ilW-HO-FB0" firstAttribute="top" secondItem="Xbs-XN-LRQ" secondAttribute="top" id="3P7-38-vmv"/>
+                            <constraint firstItem="ilW-HO-FB0" firstAttribute="bottom" secondItem="0DX-eo-lkc" secondAttribute="bottom" id="buP-ar-pvt"/>
+                            <constraint firstItem="ilW-HO-FB0" firstAttribute="leading" secondItem="0DX-eo-lkc" secondAttribute="leading" id="nuP-Mz-2RF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5MI-eX-rBn">
+                        <barButtonItem key="leftBarButtonItem" title="Refuelling" image="MenuIcon" id="0kS-xC-OuA">
+                            <connections>
+                                <action selector="btnMenuTapped:" destination="azq-aR-WGl" id="VCB-6G-9ES"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuLeadingConstraint" destination="nuP-Mz-2RF" id="tS8-Ia-yo6"/>
+                        <outlet property="menuWidthConstraint" destination="PrE-D2-sT2" id="Fr7-T1-FDu"/>
+                        <outlet property="vwMenu" destination="ilW-HO-FB0" id="ecQ-vG-hU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzM-cy-ZKS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250.72463768115944" y="905.35714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LN8-GX-tan">
+            <objects>
+                <navigationController id="puF-eM-FgI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cTg-bZ-58S">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="azq-aR-WGl" kind="relationship" relationship="rootViewController" id="4OC-9b-8pT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Coh-ha-eLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-251" y="188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4pR-u6-WMc">
+            <objects>
+                <viewController id="7nm-aK-4oQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bbx-y7-1AY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZRp-jw-1N7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uym-8r-gWo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hO-pZ-QtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="909"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NSm-Nn-D30">
+            <objects>
+                <viewController id="huu-a8-WJw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SlJ-jd-uQd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gpx-oy-wxW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="znp-vP-KsX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XH-v5-MDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="909"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MenuIcon" width="80" height="80"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

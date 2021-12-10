@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  HamburgerMenu
+//  SlidingMenu
 //
 //  Created by Jan Coolen on 10/12/2021.
 //

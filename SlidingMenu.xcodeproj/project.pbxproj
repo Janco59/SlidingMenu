@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC40868D27637BE700A1B45C /* HamburgerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC40868D27637BE700A1B45C /* SlidingMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC40869027637BE700A1B45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC40869227637BE700A1B45C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC40869427637BE700A1B45C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		DC40868427637BE700A1B45C = {
 			isa = PBXGroup;
 			children = (
-				DC40868F27637BE700A1B45C /* HamburgerMenu */,
+				DC40868F27637BE700A1B45C /* SlidingMenu */,
 				DC40868E27637BE700A1B45C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		DC40868E27637BE700A1B45C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC40868D27637BE700A1B45C /* HamburgerMenu.app */,
+				DC40868D27637BE700A1B45C /* SlidingMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC40868F27637BE700A1B45C /* HamburgerMenu */ = {
+		DC40868F27637BE700A1B45C /* SlidingMenu */ = {
 			isa = PBXGroup;
 			children = (
 				DC40869027637BE700A1B45C /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				DC40869B27637BEE00A1B45C /* LaunchScreen.storyboard */,
 				DC40869E27637BEE00A1B45C /* Info.plist */,
 			);
-			path = HamburgerMenu;
+			path = SlidingMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC40868C27637BE700A1B45C /* HamburgerMenu */ = {
+		DC40868C27637BE700A1B45C /* SlidingMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC4086A127637BEE00A1B45C /* Build configuration list for PBXNativeTarget "HamburgerMenu" */;
+			buildConfigurationList = DC4086A127637BEE00A1B45C /* Build configuration list for PBXNativeTarget "SlidingMenu" */;
 			buildPhases = (
 				DC40868927637BE700A1B45C /* Sources */,
 				DC40868A27637BE700A1B45C /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = HamburgerMenu;
+			name = SlidingMenu;
 			productName = HamburgerMenu;
-			productReference = DC40868D27637BE700A1B45C /* HamburgerMenu.app */;
+			productReference = DC40868D27637BE700A1B45C /* SlidingMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC40868827637BE700A1B45C /* Build configuration list for PBXProject "HamburgerMenu" */;
+			buildConfigurationList = DC40868827637BE700A1B45C /* Build configuration list for PBXProject "SlidingMenu" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC40868C27637BE700A1B45C /* HamburgerMenu */,
+				DC40868C27637BE700A1B45C /* SlidingMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S94SV4QHQ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HamburgerMenu/Info.plist;
+				INFOPLIST_FILE = SlidingMenu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pt.coolen.www.HamburgerMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.coolen.www.SlidingMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S94SV4QHQ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HamburgerMenu/Info.plist;
+				INFOPLIST_FILE = SlidingMenu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pt.coolen.www.HamburgerMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.coolen.www.SlidingMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC40868827637BE700A1B45C /* Build configuration list for PBXProject "HamburgerMenu" */ = {
+		DC40868827637BE700A1B45C /* Build configuration list for PBXProject "SlidingMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC40869F27637BEE00A1B45C /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC4086A127637BEE00A1B45C /* Build configuration list for PBXNativeTarget "HamburgerMenu" */ = {
+		DC4086A127637BEE00A1B45C /* Build configuration list for PBXNativeTarget "SlidingMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC4086A227637BEE00A1B45C /* Debug */,
